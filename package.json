@@ -1,0 +1,22 @@
+{
+  "name": "test_browserify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "leapjs": "^0.6.4",
+    "mathjs": "^3.8.1",
+    "three-obj-loader": "^1.0.2",
+    "watchify": "^3.8.0"
+  },
+  "devDependencies": {
+    "browserify": "latest"
+  },
+  "scripts": {
+    "test": "test",
+    "build-js": "browserify app.js > bundle.js",
+    "run": "watchify app.js -o bundle.js -v"
+  },
+  "author": "",
+  "license": "ISC"
+}
